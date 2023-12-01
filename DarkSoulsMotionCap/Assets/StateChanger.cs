@@ -7,6 +7,7 @@ public class StateChanger : MonoBehaviour
     public Animator characterAnim;
     float animationBlendVal;
     public float lerpTime;
+
     bool lerpRun;
     bool lerpAttack;
     bool lerpGrab;
@@ -33,7 +34,6 @@ public class StateChanger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
-            print("this is running");
             lerpRun = true;
 
         }
@@ -90,7 +90,7 @@ public class StateChanger : MonoBehaviour
             if (animationBlendVal == 1)
             {
                 print(animationBlendVal);
-                lerpAttack = false;
+                lerpGrab = false;
             }
         }
 
